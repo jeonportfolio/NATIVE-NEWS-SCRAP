@@ -27,4 +27,7 @@
 
 ## 뉴스 리스트 가져오고 보여주는 로직 추가 
 
-▣ Fetch를 사용해 네이버 API를 가져온다.
+▣ Fetch를 사용해 네이버 API를 가져온다.<br>
+▣ reducer에서 switch문에 의해 판별 <br>
+▣ action을 활용해 FlatList로 제목과 내용 미리 보여주기 <br>
+▣ 웹뷰를 활용해 세부페이지 접속 (url사용) -> ` npm install react-native-webview` -> route를 통해 가져옴 

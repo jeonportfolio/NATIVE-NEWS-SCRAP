@@ -12,7 +12,7 @@ export const getNewsList = (query) => (dispatch) => {
         // dispatch({type:GET_NEWS_LIST_SUCCESS})
     // },2000);
 
-    fetch(`https://openapi.naver.com/v1/search/news.json?query=${decodeURIComponent('TEST')}`,
+    fetch(`https://openapi.naver.com/v1/search/news.json?query=${decodeURIComponent(query)}`,
     {
         headers:{
             'X-Naver-Client-Id': 'Jz5uWrkJGG8Lp4JfDQkU',

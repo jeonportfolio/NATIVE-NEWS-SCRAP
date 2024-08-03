@@ -22,7 +22,8 @@ export const Typography = (props) => {
             style={{
                 color: props.color, 
                 fontSize: props.fontSize
-        }}>
+        }}
+            numberOfLines={props.numberOfLines}>
             {props.children}
         </RNText>
     )
