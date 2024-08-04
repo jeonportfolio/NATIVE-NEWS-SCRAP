@@ -20,7 +20,7 @@ export const NewsDetailScreen = ()=>{
         dispatch(clipNewsItem(routes.params.newsItem))
     }, [])
 
-    
+    const isClipped = useSelector((state)=> state.news.favoriteNews.filter((item)=>item.link === routes.params.newsItem.link)).length > 0;
 
 
     console.log(routes.params);
@@ -36,7 +36,7 @@ export const NewsDetailScreen = ()=>{
                     </View>
                 </Header.Group>
 
-                <Header.Icon iconName={'heart'} onPress={onPressFavorite}/>
+                <Header.Icon iconName={isClipped ? 'heart' : 'heart-outline'} onPress={onPressFavorite}/>
             </Header>
 
             <Webview
