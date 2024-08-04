@@ -30,4 +30,20 @@
 ▣ Fetch를 사용해 네이버 API를 가져온다.<br>
 ▣ reducer에서 switch문에 의해 판별 <br>
 ▣ action을 활용해 FlatList로 제목과 내용 미리 보여주기 <br>
-▣ 웹뷰를 활용해 세부페이지 접속 (url사용) -> ` npm install react-native-webview` -> route를 통해 가져옴 
+▣ 웹뷰를 활용해 세부페이지 접속 (url사용) -> ` npm install react-native-webview` -> route를 통해 가져옴 <br>
+
+
+## FavoriteNews 기능 
+
+▣ CLIP_NEWS_ITEM 액션을 추가하여 관리<br>
+▣ filter를 통해 중복을 방지 <br>
+▣ favorite을 추가하고 삭제하는 기능 (dispatch를 통해 reducer에 저장)-> 아이콘 상태 변경 <br>
+
+
+## async-storage를 활용한 저장기능 
+
+▣ `npm install @react-native-async-storage/async-storage` 설치
+▣ utils폴더에 AsyncStorageUtils.js 생성 
+▣ thunk 비동기 처리로 상황에 맞는 설정가능 
+
+

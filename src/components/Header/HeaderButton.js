@@ -5,7 +5,7 @@ import { Icon } from "../Icons";
 export class HeaderIcon extends React.Component {
     render(){
         return(
-            <Button onPress={this.props.onPress} title="◀-">
+            <Button onPress={this.props.onPress} title="ㅁ">
                     <Icon name= {this.props.iconName} size= {28} color='black'/> 
             </Button>
         )

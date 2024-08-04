@@ -21,6 +21,7 @@ export const NewsListScreen = () => {
             dispatch(getNewsList(query));
     },[query])
 
+
     const newsList = useSelector((state) => state.news.newsList);
 
     const onPressListItem = useCallback((newsItem) => {
@@ -40,6 +41,8 @@ export const NewsListScreen = () => {
                                onChangeText={setQuery}
                                placeholder='뉴스 검색어를 입력해 주세요'
                                onSubmitEditing= {onSubmitEditing}
+                              
+                               
                             />
                     </View>
 
